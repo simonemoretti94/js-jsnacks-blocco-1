@@ -12,9 +12,12 @@ if(isNaN(n) === true) {
 }
 
 if (n.length < 4) {
+    alert('Error, your number\'s length is lesser than 4. Exit');
+    const temp = 1;
+    while (temp === 1) {break;}    
 }
 else if (n.length > 4) {
-    alert('Error, your number length is greater than 4. Exit');
+    alert('Error, your number\'s length is greater than 4. Exit');
     const temp = 1;
     while (temp === 1) {break;}    
 }
