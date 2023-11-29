@@ -1,12 +1,16 @@
 //script
 
+//script
+
+//script
+
 const vettore = [];
 
 for (let i = 0; i < 10; i++) {
     let n = prompt('Write below a number');
 
-    if (n === NaN) {
-        console.log('not a number');
+    if (isNaN(n) === true) {
+        console.log('Not a number');
         // continue;
     }
     else if (n % 2 === 0) {
@@ -34,3 +38,6 @@ else {
 }
 
 alert('Shalom!');
+
+
+
