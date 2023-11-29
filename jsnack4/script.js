@@ -29,5 +29,5 @@ if (c > -1) {
     
 }
 else {
-    alert(`${guest_name} not found, you cannont enter the party.`)  
+    alert(`${guest_name} not found, you cannot enter the party.`)  
  }
