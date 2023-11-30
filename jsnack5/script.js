@@ -11,6 +11,7 @@ for (let i = 0; i < 10; i++) {
 
     if (isNaN(n) === true) {
         console.log('Not a number');
+        i = 11;
         // continue;
     }
     else if (n % 2 === 0) {

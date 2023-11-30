@@ -4,41 +4,33 @@ const n = prompt('Please writ below a four ciphers number');
 
 console.log('You wrote: ', n);
 
-const array = [];
+let errore =  false;
+
+let totale = 0;
 
 if(isNaN(n) === true) {
-    const temp = 1;
-    while (temp === 1) {break;}
+    errore  = true;
+    
 }
-
-if (n.length < 4) {
+else if (n.length < 4) {
     alert('Error, your number\'s length is lesser than 4. Exit');
-    const temp = 1;
-    while (temp === 1) {break;}    
+    errore =  true;
 }
 else if (n.length > 4) {
     alert('Error, your number\'s length is greater than 4. Exit');
-    const temp = 1;
-    while (temp === 1) {break;}    
+    errore =  true;
 }
 else {
+    
     for (let i = 0; i < n.length; i++) {
         console.log('number index value: ', n[i]);
-        array.push(parseFloat(n[i]));
-        console.log('array number i value: ', array[i]);       
+        totale =  totale + parseInt(n[i]);    
     }
 }
 
-i = 0;
-
-let somma = 0;
-
-for(i = 0; i < 4; i++) {
-    console.log('i value: ', i);
-    somma += array[i];
-    console.log(`sum value at #${i} iteration: `, somma);
+if (errore == false) {
+    alert(`Your number\'s four ciphers sum is ${totale}`); 
 }
-
-alert(`Your number\'s four ciphers sum is ${somma}`);
-
-alert('Adjö!');
+else {
+    alert('Refresh and try again.')
+}
